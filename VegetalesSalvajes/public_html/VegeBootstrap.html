@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>VegeBootstrap</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid"> <!-- Contenedor pricipal para bootstrap-->
+            <div class="row"> <!-- Fila para todo el contenido -->
+                <div class="col-sm-3 col-xs-12"><!-- Contenido de la columna lateral izquierda debe ocupar un 25% del ancho-->
+                    <div class="alert alert-secondary"><!-- Esto debe ir en un well-->
+                        <h2 class="h6 text-muted"><strong>Favoritos</strong></h2>
+                        <ul class="text-primary list-unstyled">
+                            <li>Raiz de celebridad</li>
+                            <li>Spagheti Loco</li>
+                            <li>Setas asesinas</li>
+                        </ul>
+                        <hr />
+                        <input class="form-control" type="text"  id="search"> 
+                        <button type="button" class="btn btn-primary">Search Recipes</button> <!-- asignar la clase de botón principal-->
+                    </div><!-- Fin del well-->
+                </div><!-- Fin de la columna lateral-->
+                <div class="col-sm-9 col-xs-12"> <!-- Columna de contenido principal debe ocupar el 75% del ancho-->
+                    <!-- Este contenido debería ir en una alerta de peligro, que además debería ser auto-cerrable -->
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Hey!</strong> ¿Has tomado tu dosis diaria de vegetales?
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- Fin de la alerta-->
+                    <h1><strong>Vegetales Salvajes</strong></h1>
+
+                    <div class="border border-secondary border-top-0 border-bottom-0 border-right-0 wrapperquote">
+                        <blockquote class="blockquote ">
+                            <p class="mb-0">La remolacha es la más intensa de las verduras. El rábano, sin duda, es más febril, pero el fuego del rábano es un fuego frío, el fuego del descontento no de la pasión. Los tomates son lo suficientemente lujuriosos, sin embargo, corre a través de los tomates una corriente subterránea de frivolidad. Las remolachas son muy serias.</p>
+                            <footer class="blockquote-footer">Tom Robbins</footer>
+                        </blockquote>
+                    </div>
+
+                    <h2>Algunas enfermedades</h2>
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Vegetal</th>
+                                <th>Enfermedad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Remolacha</td>
+                                <td>Pupuromiccitis aguda</td>
+                            </tr>
+                            <tr>
+                                <td>Zanaorias</td>
+                                <td>Carotenosis</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Conjunto de imágenes que debe ser responsive --> <!-- todas deben is además etiquetadas como thubnails -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Beets-Bundle.jpg" alt="..." width="20%" class="img-thumbnail img-responsive">
+                    <img src="https://culturedecanted.files.wordpress.com/2014/06/babywild.jpg?w=650&h=226" alt="..."  width="38%" class="img-thumbnail img-responsive">
+                    <div class="row"> <!-- crear una nueva fila para mostrar las imágenes en columnas de a 4 -->
+                        <div class="col-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Beets-Bundle.jpg" alt="..." class="img-thumbnail img-responsive">
+                        </div><!--fin de col4-->
+                        <div class="col-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Beets-Bundle.jpg" alt="..." class="img-thumbnail img-responsive">
+                        </div><!--fin de col4-->
+                        <div class="col-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Beets-Bundle.jpg" alt="..." class="img-thumbnail img-responsive">
+                        </div><!--fin de col4-->
+                        <div class="col-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Beets-Bundle.jpg" alt="..." class="img-thumbnail img-responsive">
+                        </div><!--fin de col4-->
+                    </div><!-- Fin de la zona de imágenes -->
+                    <h2>Información realmente util</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quod dicta quibusdam molestiae natus eos fugiat ducimus magni aspernatur voluptates, placeat iure sed recusandae, fuga assumenda cupiditate laudantium, numquam iste.</p>
+                    <p>Aut harum fugit vero expedita, quasi dignissimos unde, dolorum atque reiciendis, ut voluptas. Vero maiores inventore optio vel adipisci suscipit fuga sint, eum possimus sunt, quidem, veritatis voluptate odio iste?</p>
+                </div><!-- Fin de la columna de contenido principal -->
+            </div><!-- Fin de la fila principal -->
+        </div><!-- Fin del contenedor principal -->
+    </body>
+</html>
